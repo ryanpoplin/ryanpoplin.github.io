@@ -1,5 +1,6 @@
 body {
-	color: #404040;
+	background-color: #f0f0f0;
+	color: #2b2b2b;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -24,6 +25,10 @@ body {
 	padding: 10px 30px 10px 30px;
 }
 
+#secondary-header p {
+	color: #01b5b8;
+}
+
 #primary-section {
 	margin: 80px 0 80px 0;
 	padding: 0 30px 0 30px;
@@ -42,11 +47,20 @@ body {
 }
 
 #text-editor {
-	background: #131313;
+	background: #1a1a1a;
 	border-radius: 5px;
 	color: #01b5b8;
 	padding: 3px 10px 11px 10px;
 	text-align: center;
+}
+
+#secondary-footer {
+	font-size: 1.8em;
+	padding: 0 30px 0 30px;
+}
+
+ul {
+	list-style-type: none;
 }
 
 @media (max-width: 830px) {
