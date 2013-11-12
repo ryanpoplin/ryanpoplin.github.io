@@ -46,6 +46,10 @@ body {
 	text-align: center;
 }
 
+.main-content:hover {
+	background-color: #01a5b8;
+}
+
 #primary-footer {
 	border-top: 1px solid #c0c0c0;
 	color: #01b5b8;
