@@ -1,3 +1,3 @@
-App.Collections.CoreContent = Backbone.Collection.extend({
-	model: App.Models.CoreContent
+App.Collections.MainContent = Backbone.Collection.extend({
+	model: App.Models.MainContent
 });
