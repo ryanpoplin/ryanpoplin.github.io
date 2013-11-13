@@ -42,14 +42,13 @@ body {
 	color: #f0f0f0;
 	cursor: pointer;
 	font-size: 2em;
-	line-height: 5px;
 	padding: 10px 15px 10px 15px;
 	margin: 20px 0 20px;
 	text-align: center;
 }
 
 .main-content-heading {
-	font-size: 2em;
+	font-size: 1.7em;
 }
 
 .main-content:hover {
