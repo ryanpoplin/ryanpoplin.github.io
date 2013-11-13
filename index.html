@@ -3,12 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta viewport="device=device-width">
+	<link rel="shortcut icon" href="http://ryanpoplin.github.io/favicon.ico" />
 	<title>Ryan Poplin</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/core.css">
 </head>
 <body>
-	<div id="primary-container">
+	<DIV id="primary-container">
 		<header id="primary-header">
 			<h1>Ryan Poplin | Portfolio</h1>
 		</header>
@@ -17,13 +18,14 @@
 			<p>Check out some of the work I've done below...</p>
 		</header>
 		<section id="primary-section">
-			<article class="main-content">
-				<!-- It's a Backbone application... -->
-			</article>
+			<article class="main-content-container">
+
+			</article>	
 		</section>
+		<article class=""></article>
 		<footer id="primary-footer">
 			<p id="text-editor"><code>var frontEndWebDeveloper = true;</code></p>
-			<img src="arrow.png" alt="arrow" class="arrow-img">
+			<img src="arrow.png" alt="arrow" id="arrow-img">
 		</footer>
 		<footer id="secondary-footer">
 			<p>So, you want more information about me? Awesome! I recently graduated from <a href="http://theironyard.com/education/" target="_blank"><em>The Iron Yard Academy</em></a>. There I learned the ins and outs of front end web engineering. In my free time, I'm learning how to control the MongoDB/Mongoose, Express.js, Backbone.js, and Node.js development stack.</p>
@@ -31,13 +33,23 @@
 			<p>- Cell: 864-360-1231</p>
 			<p>- Email: mobileupstate@gmail.com</p>
 			<p>- GitHub: https://github.com/ryanpoplin</p>
+			<a href="http://www.w3.org/html/logo/">
+				<img id="semantics" src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+			</a>
 		</footer>
-	</div>
+		<script type="text/template" id="main-content-template">
+			<div class="main-content">
+				<h4 class="main-content-heading"><%= title %></h4>
+			</div>
+		</script>
+	</DIV>
 	<script src="scripts/jquery.js"></script>
 	<script src="scripts/underscore.js"></script>
 	<script src="scripts/backbone.js"></script>
 	<script src="scripts/core.js"></script>
-	<script src="scripts/models/core-content.js"></script>
-	<script src="scripts/collections/core-content.js"></script>
+	<script src="scripts/models/content.js"></script>
+	<script src="scripts/collections/content.js"></script>
+	<script src="scripts/views/main-content.js"></script>
+	<script src="scripts/views/main-content-listing.js"></script>
 </body>
 </html>

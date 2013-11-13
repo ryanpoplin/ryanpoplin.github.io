@@ -1,24 +1,19 @@
 var App = {
 	Models: {},
 	Collections: {},
-	MainContents: null
+	Views: {},
+	MainContents: null,
+	MainContentListing: null
 };
 
 $(function() {
-	window.articleOne = new App.Models.MainContent({
-		title: "A jQuery Mobile application for Peace Medical Center"
-	});
-	window.articleTwo = new App.Models.MainContent();
-	window.articleThree = new App.Models.MainContent();
 	App.MainContents = new App.Collections.MainContent();
-	App.MainContents.add(window.articleOne);
-	App.MainContents.add(window.articleTwo);
-	App.MainContents.add(window.articleThree);
-	var mainContents = "";
-	App.MainContents.each(function(MainContent) {
-		mainContents += "<div class='main-content'>" + 
-		MainContent.get('title');
-		mainContents += "</div>";
+	App.MainContents.add(mainContentData);
+	App.MainContentListing = new App.Views.MainContentListing({
+		el: $("#primary-section")
 	});
-	$("#primary-section").html(mainContents);
+	App.MainContentListing.render();
+	App.MainContents.on("add remove", function() {
+		App.MainContentListing.render();
+	});
 });
