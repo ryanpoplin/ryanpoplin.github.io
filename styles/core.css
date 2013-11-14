@@ -18,6 +18,22 @@ body {
 	padding: 10px 0 20px 30px;
 }
 
+.nav {
+	display: inline-block;
+   	background: #10b5b8;
+   	padding: 20px;
+   	border-radius: 4px;
+   	color: white;
+   	font-size: 1em;
+   	text-align: center;
+   	text-decoration: none;
+   	width: 100px;
+}
+
+.nav:hover {
+	background-color: #01a5b8;
+}
+
 #secondary-header {
 	border-top: 1px solid #c0c0c0;
 	border-bottom: 1px solid #c0c0c0;
@@ -36,11 +52,14 @@ body {
 	padding: 0 30px 0 30px;
 }
 
+.main-links {
+	text-decoration: none;
+}
+
 .main-content {
 	background-color: #01b5b8;
 	border-radius: 5px;
 	color: #f0f0f0;
-	cursor: pointer;
 	font-size: 2em;
 	padding: 10px 15px 10px 15px;
 	margin: 20px 0 20px;
@@ -48,11 +67,20 @@ body {
 }
 
 .main-content-heading {
-	font-size: 1.7em;
+	font-size: 1.3em;
 }
 
 .main-content:hover {
 	background-color: #01a5b8;
+}
+
+.blog-content-heading {
+	color: #01b5b8;
+	font-size: 3.5em;
+}
+
+.blog-content-paragraph {
+	font-size: 2.5em;
 }
 
 #primary-footer {
@@ -116,13 +144,19 @@ ul {
 		padding: 10px 30px 10px 30px;
 	}
 
+	.nav {
+   		padding: 20px;	
+   		font-size: 1em;
+   		width: 50px;
+	}
+
 	#primary-section {
 		margin: 80px 0 20px 0;
 		padding: 0 30px 0 30px;
 	}
 
 	.main-content-heading {
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 	
 	#primary-footer {

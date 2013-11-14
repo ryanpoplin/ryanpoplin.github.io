@@ -6,11 +6,18 @@
 	<title>Ryan Poplin</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/core.css">
+	<!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
 	<DIV id="primary-container">
 		<header id="primary-header">
 			<h1>Ryan Poplin | Portfolio</h1>
+			<nav id="primary-navigation">
+				<a href="#/"><p class="nav">Home</p></a>
+				<a href="#/blog"><p class="nav">Blog</p></a>
+			</nav>
 		</header>
 		<header id="secondary-header">
 			<h2>Hi. My name's <em>Ryan Poplin</em>. I enjoy coding, writing music, and having ardent conversations.</h2>
@@ -34,9 +41,13 @@
 			</a>
 		</footer>
 		<script type="text/template" id="main-content-template">
-			<div class="main-content">
+			<a href=<%= link %> target="_blank" class="main-links"><div class="main-content">
 				<h4 class="main-content-heading"><%= title %></h4>
-			</div>
+			</div></a>
+		</script>
+		<script type="text/template" id="blog-content-template">
+			<h3 class="blog-content-heading"><%= title %></h3>
+			<p class="blog-content-paragraph"><%= content %></p>
 		</script>
 	</DIV>
 	<script src="scripts/jquery.js"></script>
@@ -47,5 +58,6 @@
 	<script src="scripts/collections/content.js"></script>
 	<script src="scripts/views/main-content.js"></script>
 	<script src="scripts/views/main-content-listing.js"></script>
+	<script src="scripts/router.js"></script>
 </body>
 </html>
