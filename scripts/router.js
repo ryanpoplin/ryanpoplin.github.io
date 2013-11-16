@@ -5,7 +5,10 @@ App.Routers.MainRoutes = Backbone.Router.extend({
 	},
 	renderHome: function() {
 		$(function() {
-			$(".main-content-container").html("");
+			App.SecondaryHeaderListingHome = new App.Views.SecondaryHeaderListingHome({
+				el: $("#secondary-header")
+			});
+			App.SecondaryHeaderListingHome.render();
 			App.MainContentListing = new App.Views.MainContentListing({
 				el: $("#primary-section")
 			});
@@ -14,7 +17,10 @@ App.Routers.MainRoutes = Backbone.Router.extend({
 	},
 	renderBlog: function() {
 		$(function() {
-			$(".main-content-container").html("");
+			App.SecondaryHeaderListingBlog = new App.Views.SecondaryHeaderListingBlog({
+				el: $("#secondary-header")
+			});
+			App.SecondaryHeaderListingBlog.render();
 			App.BlogContentListing = new App.Views.BlogContentListing({
 				el: $("#primary-section")
 			});

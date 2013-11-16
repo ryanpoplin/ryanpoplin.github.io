@@ -11,3 +11,17 @@ App.Models.BlogContent = Backbone.Model.extend({
 		content: "Please, add some content to this blog post."
 	}
 });
+
+App.Models.SecondaryHeaderContentHome = Backbone.Model.extend({
+	defualts: {
+		heading: "A rendering error in 'SecondaryHeaderContentHome' has occured. Please, refresh this web application.",
+		paragraph: "Please, add a paragraph."
+	}
+});
+
+App.Models.SecondaryHeaderContentBlog = Backbone.Model.extend({
+	defualts: {
+		heading: "A rendering error in 'SecondaryHeaderContentBlog' has occured. Please, refresh this web application.",
+		paragraph: "Please, add a paragraph."
+	}
+});

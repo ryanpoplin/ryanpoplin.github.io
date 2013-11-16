@@ -29,3 +29,35 @@ App.Views.BlogContentListing = Backbone.View.extend({
 	  return this;
 	}
 });
+
+App.Views.SecondaryHeaderListingHome = Backbone.View.extend({
+	initialize: function() {
+		_.bindAll(this, "render");
+	},
+	render: function() {
+		var $container = this.$(".secondary-header-container").empty();
+		App.SecondaryHeaderContentsHome.each(function(SecondaryHeaderContentHome) {
+			new App.Views.SecondaryHeaderContentHome({
+				model: SecondaryHeaderContentHome,
+				$container: $container
+			}).render();
+		});
+	  return this;
+	}
+});
+
+App.Views.SecondaryHeaderListingBlog = Backbone.View.extend({
+	initialize: function() {
+		_.bindAll(this, "render");
+	},
+	render: function() {
+		var $container = this.$(".secondary-header-container").empty();
+		App.SecondaryHeaderContentsBlog.each(function(SecondaryHeaderContentBlog) {
+			new App.Views.SecondaryHeaderContentBlog({
+				model: SecondaryHeaderContentBlog,
+				$container: $container
+			}).render();
+		});
+	  return this;
+	}
+});
